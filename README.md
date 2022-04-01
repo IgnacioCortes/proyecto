@@ -1,3 +1,3 @@
 # proyecto
-Ignacio Cortes Gonzalez >
-Nicolas Oñate Martinez
+1)Ignacio Cortes Gonzalez 
+2)Nicolas Oñate Martinez
