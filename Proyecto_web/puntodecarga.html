@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Galería</title>
+        <meta name="description" content="">
+
+        <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
+        <link rel="stylesheet" href="css/menu.css" type="text/css"/>
+        <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+        <link rel="stylesheet" href="css/detallefoto.css" type="text/css"/>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+       rel="stylesheet">
+        <link rel="stylesheet" href="css/icons.css" type="text/css"/>
+    </head>
+    <body>
+        <!--cabeza + menu-->
+       <header><h1>WoW</h1></header>
+       <nav>
+        <ul id="menu"> 
+            <li><a href="inicio.html" title="inicio"><span class="material-icons">
+                assignment_ind</span> Inicio</a></li>
+            <li><a href="cuentanueva.html" title="crearcuenta"><span class="material-icons">
+                add_box
+                </span> Crear cuenta</a></li>
+            <li><a href="puntodecarga.html" title="puntodecarga"><span class="material-icons">battery_alert</span> Punto Carga</a></li>
+            <li><a href="busquedaestaciones.html" title="estaciones"><span class="material-icons">ev_station</span> Buscar estaciones</a></li>
+            <li><a href="comentarios.html" title="comentarios"><span class="material-icons">chat </span> Comentarios estaciones</a></li>
+
+
+        <div id="buscador">
+              <form method="POST">
+                   <input type="search" autocomplete="address-level1" placeholder="Buscador" /> 
+              </form>
+        </div>
+ </nav>
+
+<!--fin cabeza+menu-->
+      <section>
+         <div class="foto">
+             <img src="multimedia/imagenes/ec.jpg"  style="max-width:50%;width:auto;height:auto;"/>
+             
+         </div>
+      </section>
+
+      <section class="descripcion">
+          <div id="comentarios">
+              <p>ESTACION ENEL X</p>
+          
+            <ul class="comentarios">
+                <li>
+                    <span><p style="color: forestgreen;">Ubicacion</p></span>
+                    <p>Calle 435</p>
+                </li>
+
+                <li>
+                    <span><p style="color: forestgreen;">Horario</p></span>
+                    <p>24 horas</p>
+                </li>
+
+                <li>
+                    <span><p style="color: forestgreen;">Tipo de cargador</p></span>
+                    <p>Cargador tipo</p>
+                </li>
+
+                <li>
+                    <span><p style="color: forestgreen;">Voltaje</p></span>
+                    <p>50 kW</p>
+                </li>
+
+            </ul> 
+         </div>
+
+      </section>
+
+
+    </body>
+</html>

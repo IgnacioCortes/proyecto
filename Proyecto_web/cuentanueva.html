@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicie Sesion</title>
+        <meta name="description" content="pagina landing/inicio de sesion">
+        <meta name="keywords" content="inicio,cuentas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
+        <link rel="stylesheet"  href="css/menu.css" type="text/css"/>
+        <link rel="stylesheet"  href="css/estilos.css" type="text/css"/>
+        <link rel="stylesheet"  href="css/cuentanueva.css" type="text/css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+       rel="stylesheet">
+        <link rel="stylesheet" href="css/icons.css" type="text/css"/>
+ 
+
+
+    </head>
+    <body>
+        <header><h1>CTN</h1></header>
+        <nav>
+            <ul id="menu"> 
+                <li><a href="inicio.html" title="inicio"><span class="material-icons">
+                    assignment_ind</span> Inicio</a></li>
+                <li><a href="cuentanueva.html" title="crearcuenta"><span class="material-icons">
+                    add_box
+                    </span> Crear cuenta</a></li>
+                <li><a href="puntodecarga.html" title="puntodecarga"><span class="material-icons">battery_alert</span> Punto Carga</a></li>
+                <li><a href="busquedaestaciones.html" title="estaciones"><span class="material-icons">ev_station</span> Buscar estaciones</a></li>
+                <li><a href="comentarios.html" title="comentarios"><span class="material-icons">chat </span> Comentarios estaciones</a></li>
+
+
+            <div id="buscador">
+                  <form method="POST">
+                       <input type="search" autocomplete="address-level1" placeholder="Buscador" /> 
+                  </form>
+            </div>
+     </nav>
+
+         <section id="principal">
+                <form  method="POST">
+                    <ul class="formulario">
+
+                         <li>
+                           <label for="nombreapellido" >Nombre</label>
+                            <input type="text" class="form-control" id="nombrereal" placeholder="Nombre y Apellido" maxlength="" required >
+                         </li>
+                         <li>
+                            <label for="nombreusuario">Nombre Usuario</label>
+                            <input type="text" class="form-control" id="nombreusuario" placeholder="Nombre Usuario" pattern="[A-Z0-9]+" maxlength="9" required>
+                           </li>
+                         <li>
+                            <label for="correo" >Correo Electronico</label>
+                             <input type="text" class="form-control" id="correo" placeholder="Correo Electronico"  maxlength="" required >
+                          </li>
+                          <li>
+                            <label for="contraseña" >Contraseña</label>
+                             <input type="password" class="form-control" id="contraseña" placeholder="Contraseña"  maxlength="10" required >
+                          </li>
+                          <li>
+                            <label for="confirmarcontraseña" >Confirme contraseña</label>
+                             <input type="password" class="form-control" id="confirmacion" placeholder="Confirme su contraseña"  maxlength="10" required >
+                          </li>
+                    </ul>
+                    
+                    <div class="buttons">
+                        <div class="action_btn">
+
+                            <button name="submit" id="createaccount" type="submit" value="Save" onclick="checkUser()">Crear cuenta nueva</button>
+                            <button name="submit" id="cancel" type="button" value="Cancel" onclick="href=inicio.html">Cancelar</button>
+                
+                    </div>
+                  </form>
+         </section>
+  
+        <footer><span>Realizado por : XXXXX</span></footer>
+    </body>
+</html>
+
+<script type="text/javascript">
+    document.getElementById("cancel").onclick = function () {
+        location.href = "inicio.html";
+    };
+</script>
